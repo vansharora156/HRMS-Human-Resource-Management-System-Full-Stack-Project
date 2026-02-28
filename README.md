@@ -86,6 +86,31 @@ Browse to `http://localhost:5173` to interact with the platform.
 
 ---
 
+## 🌐 Deployment
+
+The application is optimized for cloud deployment using **Render** and **Vercel**.
+
+### 1. Backend Deployment (Render)
+1. Create a new **Web Service** on Render.
+2. Connect your GitHub repository.
+3. Configure settings:
+   - **Root Directory**: `backend`
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port 10000`
+4. Add **Environment Variables**:
+   - `SUPABASE_URL`: Your Supabase Project URL.
+   - `SUPABASE_KEY`: Your Supabase Anon Key.
+
+### 2. Frontend Deployment (Vercel)
+1. Create a new project on Vercel and import your repository.
+2. Configure settings:
+   - **Root Directory**: `frontend`
+   - **Framework Preset**: `Vite` (Auto-detected).
+3. Add **Environment Variable**:
+   - `VITE_API_URL`: Your Render backend URL (e.g., `https://your-app.onrender.com`).
+4. **Important**: If you update the URL, trigger a **Redeploy** on Vercel to apply the changes.
+
+---
+
 ## 💎 Design Philosophy
 
 The User Interface isn't just a basic MVP. Extensive curation went into creating dynamic and lively interactions:
