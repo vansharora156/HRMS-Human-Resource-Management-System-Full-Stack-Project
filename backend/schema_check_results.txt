@@ -1,0 +1,34 @@
+{
+  "attendance": [
+    "attendance_id",
+    "emp_id",
+    "attendance_date",
+    "check_in",
+    "check_out",
+    "status",
+    "created_at"
+  ],
+  "leave_requests": [
+    "request_id",
+    "emp_id",
+    "leave_type_id",
+    "from_date",
+    "to_date",
+    "status"
+  ],
+  "employees": [
+    "id",
+    "first_name",
+    "last_name",
+    "email",
+    "designation",
+    "department",
+    "joining_date",
+    "status",
+    "created_at"
+  ],
+  "assets": [
+    "asset_id",
+    "name"
+  ]
+}

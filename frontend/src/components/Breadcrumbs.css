@@ -1,0 +1,42 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+}
+
+.bc-group {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.bc-item {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.bc-item:hover:not(.bc-current) {
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.bc-home {
+    color: var(--text-muted);
+}
+
+.bc-current {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.bc-sep {
+    color: var(--text-muted);
+    opacity: 0.4;
+}

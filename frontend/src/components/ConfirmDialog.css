@@ -1,0 +1,55 @@
+.confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 250;
+}
+
+.confirm-card {
+    text-align: center;
+    padding: 32px 36px;
+    max-width: 380px;
+    width: 100%;
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border-light) !important;
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.confirm-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(239, 68, 68, 0.12);
+    color: var(--error);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.confirm-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.confirm-card p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.confirm-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.confirm-actions .btn {
+    min-width: 100px;
+}

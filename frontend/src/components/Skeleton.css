@@ -1,0 +1,45 @@
+.skeleton-table {
+    padding: 20px;
+}
+
+.skeleton-header {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-glass);
+    margin-bottom: 12px;
+}
+
+.skeleton-row {
+    display: flex;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.skeleton-cell {
+    height: 14px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.skeleton-pulse {
+    animation: skeletonPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeletonPulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.skeleton-header .skeleton-cell {
+    height: 10px;
+    opacity: 0.6;
+}
